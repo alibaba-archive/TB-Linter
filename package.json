@@ -1,6 +1,6 @@
 {
   "name": "tb-linter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A customized linter for Teambition Standards.",
   "license": "MIT",
   "main": "index.js",
