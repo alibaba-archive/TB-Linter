@@ -22,9 +22,13 @@ Example:
  $ tb-linter src/styles -l stylus-less
 ```
 
+### Supported Languages
+- JavaScript, ES6
+- Stylus
+
 ### Including Linters
 - [stylint](https://github.com/rossPatton/stylint) - Improve your Stylus code with Stylint.
-- [standard](https://github.com/feross/standard) -  JavaScript Standard Style.
+- [standard](https://github.com/feross/standard) - JavaScript Standard Style.
 
 ### License
 This work is licensed under the MIT license.
