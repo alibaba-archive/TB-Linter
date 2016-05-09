@@ -1,0 +1,89 @@
+.nav-underscore, .nav-tabs, .nav-pills
+  clearfix()
+
+.nav-underscore > li, .nav-tabs > li, .nav-pills > li
+  float: left
+
+.nav-underscore
+  height: 55px
+  border-bottom: 1px solid $navUnderscoreBase
+
+.nav-underscore > li
+  margin-bottom: -2px
+
+.nav-underscore > li:first-child > a
+  margin-right: 80px
+  cursor: pointer
+
+  span.icon
+    margin-top: -5px
+
+  h3
+    cursor: text
+
+  span.icon + h3
+    cursor: pointer
+
+  &:hover
+
+    span.icon
+      color: $linkColorHover
+
+    span.icon + h3
+      color: $linkColorHover
+
+.nav-underscore > li > a
+  margin-right: 60px
+  padding: 16px 0 18px
+  height: 55px
+  line-height: $baseLineHeight
+  font-size: $fontSizeLarge
+  border-bottom: 1px solid transparent
+
+  &:hover
+    color: $linkColorHover
+
+.nav-underscore > li:last-child > a
+  margin-right: 0
+
+.nav-underscore > li > a > h3
+  display: inline
+  max-width: 140px
+  margin: 0
+  line-height: $baseLineHeight
+  font-size: $fontSizeLargest
+  color: $darkTextColor
+  text-overflow()
+
+.nav-underscore > li > a > i + h3
+  color: $lightTextColor
+
+.nav-underscore > li > .btn, .nav-underscore > li > .btn-group
+  margin: 5px 0 10px 15px
+
+.nav-underscore > li > .btn, .nav-underscore > li > .btn-group > .btn
+  padding: 8px 12px
+
+.nav-underscore > .active > a
+  color: $linkColorHover
+  border-bottom-color: $linkColorHover
+
+.nav-tabs
+
+  & > li
+
+    &.active > a
+      color: $linkColorHover
+
+      &, &:active, &:hover
+        border-color: transparent
+        background-color: $white
+
+    & > a
+      padding: $padding-base-vertical $padding-base-horizontal
+      background-color: $navTabBackground
+      color: $lightTextColor
+      border-radius: 0px
+
+      &:hover
+        background-color: darken($navTabBackground, 5%)

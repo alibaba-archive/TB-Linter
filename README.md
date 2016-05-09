@@ -1,2 +1,30 @@
-# Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## TB-Linter: listen to me, or persuade me now
+
+### Installation
+```
+$ npm i tb-linter -g
+```
+
+### CLI Usage
+```
+$ tb-linter <source> [options]
+
+Options:
+
+  -h, --help        output usage information
+  -V, --version     output the version number
+
+  -l, --lang [l-l]  filter the linters by languages
+  -f, --fix         automatically fix warnings and errors
+
+Example:
+
+ $ tb-linter src/styles -l stylus-less
+```
+
+### Including Linters
+- [stylint](https://github.com/rossPatton/stylint) - Improve your Stylus code with Stylint.
+- [standard](https://github.com/feross/standard) -  JavaScript Standard Style.
+
+### License
+This work is licensed under the MIT license.

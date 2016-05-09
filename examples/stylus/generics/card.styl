@@ -1,0 +1,52 @@
+.card-content.card-content-fill
+  padding: 0
+
+.card
+  border: 0 none
+  background-color: $white
+  border-radius: $borderRadiusSmall
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 2px 3px 0px
+
+  &:empty
+    display: none
+
+  &.allow-empty:empty
+    display: block
+
+  .card-header
+    margin-left: 10px
+    padding: 10px 15px 10px 5px
+    font-size: 20px
+    line-height: 30px
+    border-bottom: 1px solid $divideLineColor
+    clearfix()
+
+    h3.card-title, p.card-title
+      margin: 0
+      font-size: $fontSizeLargest
+      font-size: 20px
+      line-height: $altLineHeight
+
+    .card-description
+      color: $lightTextColor
+      margin: 0
+
+    &.no-bottom
+      border: 0 none
+
+    .btn
+      padding: 4px 12px
+
+  .card-content
+    margin-left: 10px
+    padding: 10px 15px 10px 5px
+
+.modal-dialog.card
+
+  .card-header
+    margin-left: 0
+    padding: 15px 25px
+
+  .card-content
+    margin-left: 0
+    padding: 25px

@@ -1,0 +1,97 @@
+.modal-open
+  overflow: hidden
+
+.modal-backdrop
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: $zindexModalBackdrop
+  background-color: $black
+  opacity: 0.7
+
+  &.fade.in
+    opacity: 0.7
+
+  &.fade
+    opacity: 0
+
+.modal
+  display: none
+  overflow-x: hidden
+  overflow-y: auto
+  z-index: $zindexModal
+
+  &.in .modal-dialog
+    transition: none
+    transform: none
+
+  label
+    font-weight: normal
+
+  .modal-dialog
+    width: 600px
+    margin: 50px auto
+    border: 0 none
+    background-color: $white
+    border-radius: $baseBorderRadius
+    color: $grayDarker
+    font-size: $baseFontSize
+    box-shadow: none
+
+    &.modal-padding
+      padding: 20px
+
+  .modal-content
+    border: 0 none
+    box-shadow: none
+
+  .modal-padding .modal-content
+    border-radius: 0
+
+  .modal-header
+    position: relative
+    padding: 0px
+    min-height: 0px
+    border-bottom: 0 none
+
+    .modal-title
+      margin: 0px
+      padding-bottom: 15px
+      border-bottom: 1px solid $divideLineColor
+      color: $grayDark
+      font-size: $fontSizeLargest
+      line-height: 20px
+
+    .modal-close
+      position: absolute
+      top: -2px
+      right: 0
+
+  .modal-body
+    padding: 0px
+    padding-top: 20px
+
+    h5
+      font-size: 15px
+      margin-top: 0px
+      padding-left: 5px
+
+  .modal-footer
+    margin-top: 20px
+    padding: 0
+    border-top: 0 none
+    clearfix()
+
+    .btn
+      min-width: 96px
+
+    .btn-link
+      color: $grayDarker
+
+.modal-dialog.card
+
+  .card-header, .card-content
+    margin-left: 0
+    padding: 15px 25px

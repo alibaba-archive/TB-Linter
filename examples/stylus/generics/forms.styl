@@ -1,0 +1,62 @@
+.form-horizontal
+
+  .form-group
+    margin-left: 0px
+    margin-right: 0px
+
+    .form-control-select
+      width: 100%
+
+.form-control
+  height: 40px
+  padding: 8px 12px
+  color: $darkTextColor
+  box-shadow: none
+
+  input&, textarea&
+    background-color: $inputBackground
+    border: 1px solid $inputBorder
+    border-radius: $inputBorderRadius
+    line-height: 20px
+
+  input&
+    height: $inputHeight
+    line-height: ($inputHeight - 14)
+
+  &:focus
+    border-color: $inputBorderHighlight
+    box-shadow: none
+    outline: 0
+
+  &.btn-danger
+    background-color: $btnDangerBackground
+    border-color: $btnDangerBackground
+
+.form-control-select
+  position: relative
+  display: inline-block
+
+  &:after
+    content: '\e10e'
+    font-family: 'tb-icons' !important
+    color: #aaa
+    border-bottom: #000
+    right: 10px
+    top: 10px
+    font-size: 12px
+    padding: 0 0 2px
+    position: absolute
+    pointer-events: none
+
+.input-large, input.input-large
+  height: $input-height-large
+  padding: $padding-large-vertical $padding-large-horizontal
+  font-size: $font-size-large
+  border-radius: $borderRadiusLarge
+
+.input-small, input.input-small
+  height: $input-height-small
+  padding: $padding-small-vertical $padding-small-horizontal
+  font-size: $font-size-small
+  border-radius: $borderRadiusSmall
+  line-height: 20px

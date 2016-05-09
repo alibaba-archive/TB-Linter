@@ -1,0 +1,82 @@
+.dropdown-menu
+  min-width: 170px
+  max-height: 220px
+  border: 0 none
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  box-shadow: $dropdownShadow
+
+  li > a
+    display: block
+    padding: 5px 35px 5px 15px
+    clear: both
+    line-height: 24px
+    color: $dropdownLinkColor
+    white-space: nowrap
+    outline: 0 none
+    cursor: pointer
+    text-overflow()
+
+    .avatar, .icon
+      square(24px)
+      float: left
+      margin-left: -2px
+      margin-right: 10px
+      text-align: center
+      background-size: 24px 24px
+      font-size: 18px
+      line-height: 24px
+
+    i
+      margin-left: 2px
+      margin-right: 8px
+
+  li.selected
+    position: relative
+
+    &:after
+      position: absolute
+      top: 8px
+      right: 15px
+      content: '\b006'
+      display: block
+      size(14px, 14px)
+      font-family: 'tb-icons'
+      color: $lightTextColor
+
+  li.divider
+    margin: 5px 15px
+    background-color: $lightDivideLineColor
+
+  a.ui-state-focus
+    background-color: #f1f1f1
+
+.open
+
+  & > .dropdown-menu
+    display: block
+    overflow: auto
+    opacity(0.99)
+
+.list-underscore
+
+  .underscore
+    position: relative
+
+    &:first-child:before
+      display: none
+
+  .underscore:before
+    display: inline-block
+    position: absolute
+    top: -1px
+    left: 0
+    right: 0
+    margin: 0 15px
+    border-top: 1px solid $lightDivideLineColor
+    content: ''
+
+  >  li:hover + li, .underscore:hover
+
+    &:before
+      border-color: transparent

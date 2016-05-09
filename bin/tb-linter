@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var commander = require( 'commander')
+var pkg       = require('../package.json')
+var linter    = require('../')
+
+commander
+  .version(pkg.version)
+  .description(pkg.description)
+  .usage('<source> [options]')
+
+commander
+  .option('-l, --lang [l-l]', 'filter the linters by language')
+  .option('-f, --fix', 'automatically fix warnings and errors')
+
+commander.parse(process.argv)
+
+// Run the command
+var source = commander.args[0]
+var lang   = commander.lang
+var isFix  = commander.fix
+
+// Stylus
+if (!lang || /stylus/i.test(lang))  {
+  linter.stylint(source)
+}
+
+// JavaScript
+if (!lang || /js|javascript|es6/i.test(lang))  {
+  linter.standard(source, isFix)
+}

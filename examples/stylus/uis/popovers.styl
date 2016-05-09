@@ -1,0 +1,97 @@
+.popover
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 250px
+  max-width: none
+  z-index: $zindexPopover
+  padding: 0
+  text-align: left
+  border: 1px solid $dropdownBorder
+  background-color: $dropdownBackground
+  border-radius: $baseBorderRadius
+  box-shadow: $dropdownShadow
+
+  &.top
+    margin-top: 0
+
+  &.right
+    margin-left: 0
+
+  &.bottom
+    margin-top: 0
+
+  &.left
+    margin-left: 0
+
+  >  .arrow
+
+    &, &:after
+      display: none
+
+  .popover-title
+    padding: 0
+    background: none
+    border: 0 none
+    text-align: center
+    font-size: $fontSizeLarge
+    font-weight: bold
+    line-height: 30px
+    border-radius 0px
+
+  .popover-header
+    padding: 10px 15px
+    border-bottom: 1px solid $lightDivideLineColor
+    margin: 0px 15px
+
+  .popover-close-handler, .popover-back-handler
+    position: absolute
+    top: 15px
+
+  .popover-close-handler
+    right: 15px
+
+  .popover-back-handler
+    visibility: hidden
+    opacity: 0
+    left: 15px
+    transition: opacity 218ms
+
+    &:hover
+
+      i
+        background-position: -192px -48px
+
+  &.in-submenu .popover-back-handler
+    visibility: visible
+    opacity: 1
+
+.popover-content
+  padding: 15px
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+
+  &.no-padding
+    padding: 0
+
+  >  .list
+    margin: -15px
+
+    >  li
+      line-height: 30px
+
+      >  a
+        color: $dropdownLinkColor
+
+      &:hover > a
+        color: $dropdownLinkColorHover
+
+  .form-control
+    margin-bottom: 15px
+
+    &:last-child
+      margin-bottom: 0
+
+  textarea
+    resize: vertical
