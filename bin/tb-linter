@@ -29,3 +29,8 @@ if (!lang || /stylus/i.test(lang))  {
 if (!lang || /js|javascript|es6/i.test(lang))  {
   linter.standard(source, isFix)
 }
+
+// TypeScript
+if (!lang || /ts|typescript/i.test(lang))  {
+  linter.tslint(source)
+}

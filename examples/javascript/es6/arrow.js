@@ -10,7 +10,7 @@ let foo = ['Hello', 'World'];
 let bar = foo.map(x => x.length)
 
 // ES5
-var bar = foo.map(function(x) { return x.length })
+var bar = foo.map(function (x) { return x.length })
 
 // multiline functions require curly braces
 // no arguments expect parenthesis

@@ -1,9 +1,11 @@
 var fs       = require('fs')
-var glob     = require( 'glob' )
+
 var fmt      = require('standard-format')
 var standard = require('standard')
 var chalk    = require('chalk')
 var table    = require('text-table')
+
+var utils    = require('./utils')
 
 function pluralize (word, count) {
   return (count === 1 ? word : word + 's')
@@ -66,29 +68,16 @@ function processFile (transformed, isFix) {
   }
 }
 
-function getFiles (path, done) {
-  return glob(path, {}, function(err, files) {
-    return done(null, files.map(function (file) {
-      return { name: file, data: fs.readFileSync(file).toString() }
-    }))
-  })
-}
-
-function error (err) {
-  console.error(err)
-  process.exit(1)
-}
-
 module.exports = function(dir, isFix) {
   var path = dir + '/**/*.+(js|vue|jsx)'
   if (isFix) {
-    getFiles(path, function (err, files) {
-      if (err) return error(err)
+    utils.getFiles(path, function (err, files) {
+      if (err) return utils.error(err)
       files.forEach(function (file) {
         try {
           file.data = fmt.transform(file.data)
           processFile(file, isFix)
-        } catch (e) { error(file.name + ': ' + e) }
+        } catch (e) { utils.error(file.name + ': ' + e) }
       })
     })
   }

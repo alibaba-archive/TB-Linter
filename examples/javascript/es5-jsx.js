@@ -9,7 +9,7 @@ var noop = require('noop')
 var x = 1
 
 // eol whitespace
-x = 2;
+x = 2
 
 // standard-format has nothing to say about unused vars
 // so this is here to prevent invalid test cases

@@ -25,11 +25,13 @@ Example:
 ```
 
 ### Supported Languages
-- JavaScript, ES6
+- JavaScript (ES6)
+- TypeScript
 - Stylus
 
 ### Including Linters
 - [standard](https://github.com/feross/standard) - JavaScript Standard Style.
+- [tslint](https://github.com/palantir/tslint) - An extensible linter for the TypeScript language.
 - [stylint](https://github.com/rossPatton/stylint) - Improve your Stylus code with Stylint.
 
 ### License
