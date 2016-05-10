@@ -23,5 +23,13 @@
     "stylint": "^1.3.9",
     "stylint-stylish": "^1.2.2",
     "text-table": "^0.2.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

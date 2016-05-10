@@ -6,7 +6,7 @@ $ npm i tb-linter -g
 ```
 
 ### CLI Usage
-```
+``` bash
 $ tb-linter <source> [options]
 
 Options:
@@ -19,8 +19,9 @@ Options:
 
 Example:
 
+ $ tb-linter src # Minimalist
  $ tb-linter src/styles -l stylus-less
- $ tb-linter src/scripts -l javascript -f
+ $ tb-linter src/scripts -l javascript -f # Re-write
 ```
 
 ### Supported Languages
@@ -28,8 +29,8 @@ Example:
 - Stylus
 
 ### Including Linters
-- [stylint](https://github.com/rossPatton/stylint) - Improve your Stylus code with Stylint.
 - [standard](https://github.com/feross/standard) - JavaScript Standard Style.
+- [stylint](https://github.com/rossPatton/stylint) - Improve your Stylus code with Stylint.
 
 ### License
 This work is licensed under the MIT license.
