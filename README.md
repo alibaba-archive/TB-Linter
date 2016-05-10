@@ -20,6 +20,7 @@ Options:
 Example:
 
  $ tb-linter src/styles -l stylus-less
+ $ tb-linter src/scripts -l javascript -f
 ```
 
 ### Supported Languages

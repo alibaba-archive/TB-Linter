@@ -1,9 +1,10 @@
 {
   "name": "tb-linter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A customized linter for Teambition Standards.",
   "license": "MIT",
   "main": "index.js",
+  "bin": "./bin/tb-linter",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/teambition/TB-Linter.git"
