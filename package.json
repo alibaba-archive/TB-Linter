@@ -1,6 +1,6 @@
 {
   "name": "tb-linter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A customized linter for Teambition Standards.",
   "license": "MIT",
   "main": "index.js",
@@ -24,7 +24,8 @@
     "stylint-stylish": "^1.2.2",
     "text-table": "^0.2.0",
     "tslint": "^3.9.0",
-    "tslint-stylish": "^2.1.0-beta"
+    "tslint-stylish": "^2.1.0-beta",
+    "typescript": "^1.8.10"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.6"

@@ -7,8 +7,7 @@ module.exports = {
     ],
     "class-name": true,
     "comment-format": [true,
-      "check-space",
-      "check-lowercase"
+      "check-space"
     ],
     "curly": false,
     "eofline": true,
