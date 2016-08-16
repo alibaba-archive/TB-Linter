@@ -1,6 +1,6 @@
 module.exports = {
   "rules": {
-    "curly": true,
+    "curly": false,
     "eofline": false,
     "align": [true, "parameters"],
     "class-name": true,
